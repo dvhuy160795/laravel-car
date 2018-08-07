@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Product extends Migration
+class Attachment extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class Product extends Migration
      */
     public function up()
     {
-        Schema::create('product', function (Blueprint $table) {
+        Schema::create('attachment', function (Blueprint $table) {
             $table->increments('id',16);
-            $table->string('product_name',256);
-            $table->string('product_name_search',256);
-            $table->string('product_price',128);
-            $table->string('product_type',256);
+            $table->string('attachment_name',256);
+            $table->string('attachment_hash_name',256);
+            $table->string('attachment_dir',256);
+            $table->string('attachment_extention',256);
+            $table->string('attachment_type',256);
+            $table->string('attachment_filter_code',128);
             $table->timestamps();
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
