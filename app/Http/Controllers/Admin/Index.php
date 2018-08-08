@@ -8,6 +8,6 @@ use App\Http\Controllers\Controller;
 class Index extends Controller
 {
     public function index() {
-        var_dump(12);die;
+        return view("Admin.index");
     }
 }
