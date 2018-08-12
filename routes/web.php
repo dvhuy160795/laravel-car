@@ -14,4 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/Admin.html','Admin\Index@index');
+
+Route::group(['prefix' => 'Admin','middleware' => 'auth'],function () {
+    Route::get('/Index.html','Admin\Index@index');
+    Route::post('/Save.html','Admin\Index@save');
+    Route::get('/Login.html','Auth\Login@index');
+});
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
