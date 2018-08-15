@@ -22,7 +22,6 @@ var AdminController = {
     autoLoadEl : function (el, elDisplay, itemValue = ""){
         var $avatarUser = $('#'+elDisplay);
         var reader = new FileReader();
-        console.log(elDisplay);
         reader.onload = function (e) {
             $avatarUser.attr('src', e.target.result);
         }
@@ -30,7 +29,6 @@ var AdminController = {
     },
     
     fillItemContentIntro : function () {
-        console.log(parseInt($("#list_content_intro div.box_content:last-child").attr("id").replace("box_item_content_intro_","")));
         var index = parseInt($("#list_content_intro div.box_content:last-child").attr("id").replace("box_item_content_intro_","")) + 1;
         var html = "";
         html += "<div class='col-md-12 box_content' id='box_item_content_intro_"+index+"'><div><hr></div>" ;
@@ -38,6 +36,21 @@ var AdminController = {
         html += "<script>CKEDITOR.replace('item_content_intro_"+index+"');</script>"
         html +="</div>";
         $("#list_content_intro").append(html);
+    },
+    
+    uploadAttachment : function (el) {
+            $.ajax({
+                url: "Index.html",
+                type: 'POST',
+                data: {},
+                async: false,
+                success: function (data) {
+                    alert(data)
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
     }
 };
 

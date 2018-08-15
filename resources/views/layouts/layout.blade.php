@@ -15,7 +15,7 @@
 <!-- Contact Form -->}">
 <link href="{{ URL::asset('/theme/contact-form/css/style.css') }}" media="screen" rel="stylesheet" type="text/css">
 <!-- JS Files -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ URL::asset('/lib/jquery-1.7.1.js') }}"></script>
 <script src="{{ URL::asset('/theme/js/jquery.tools.min.js') }}"></script>
 <script src="{{ URL::asset('/lib/ckeditor/ckeditor.js') }}"></script>
 <script src="{{ URL::asset('/lib/boostrap/js/bootstrap.js') }}"></script>
@@ -25,10 +25,6 @@ $(function () {
     $("#prod_nav ul").tabs("#panes > div", {
         effect: 'fade',
         fadeOutSpeed: 400
-    });
-        $( "#add_product_profile" ).submit( function( ) {
-        event.preventDefault();
-        console.log( $( this ).serialize() );
     });
 });
 </script>

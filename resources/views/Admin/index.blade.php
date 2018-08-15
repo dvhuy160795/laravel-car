@@ -54,9 +54,20 @@
   
   <div style="clear:both"></div>
   <div class="col-md-12">
-    <h2>Business Solutions</h2>
-    <p>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.</p>
-    <p style="text-align:right; margin-right: 15px"><a href="#" class="button_small">Find out more</a></p>
+    <h2>Ảnh hệ thống</h2>
+    <div>
+        <form name="uploadAttachment" id="uploadAttachment" method="post" enctype="multipart/form-data">
+            <input class="form-control" type="file" name="attachment">
+            <hr>
+            <input class="form-control" type="button" name="addFile" value="Tải ảnh" onclick="AdminController.uploadAttachment(this)">
+        </form>
+    </div>
+    <div>
+        <table>
+            <tr></tr>
+            <tr></tr>
+        </table>
+    </div>
   </div>
 
   <div class="one-half">
@@ -64,7 +75,7 @@
       <h2>About Us</h2>
     </div>
     <blockquote>Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida. </blockquote>
-    <p style="text-align:right; margin-right: 16px; margin-bottom: 15px"><a href="#" class="button" style="font-size: 18px">Find out more</a></p>
+    <p style="text-align:right; margin-right: 16px; margin-bottom: 15px"><a class="button " style="font-size: 18px">Find out more</a></p>
     <div class="heading_bg">
       <h2>Video</h2>
     </div>

@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::group(['prefix' => 'Admin','middleware' => 'auth'],function () {
     Route::get('/Index.html','Admin\Index@index');
     Route::post('/Save.html','Admin\Index@save');
+    Route::get('/Upload.html','AttachmentController@interfaceuploadfile');
+    Route::post('/SaveFile.html','AttachmentController@savefile');
     Route::get('/Login.html','Auth\Login@index');
 });
 
