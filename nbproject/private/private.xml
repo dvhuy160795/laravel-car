@@ -2,25 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/E:/laravel/businessweb/resources/views/Admin/product/add_tab2.blade.php</file>
-            <file>file:/E:/laravel/businessweb/database/migrations/2018_08_07_151922_product.php</file>
-            <file>file:/E:/laravel/businessweb/app/Http/Controllers/AttachmentController.php</file>
-            <file>file:/E:/laravel/businessweb/resources/views/Admin/product/add_tab1.blade.php</file>
-            <file>file:/E:/laravel/businessweb/routes/web.php</file>
-            <file>file:/E:/laravel/businessweb/resources/views/Admin/product/add_tab4.blade.php</file>
-            <file>file:/E:/laravel/businessweb/public/js/admin/admin.js</file>
-            <file>file:/E:/laravel/businessweb/resources/views/layouts/layout.blade.php</file>
-            <file>file:/E:/laravel/businessweb/resources/views/Admin/product/add_tab3.blade.php</file>
-            <file>file:/E:/laravel/businessweb/database/migrations/2018_08_11_084052_product_intro.php</file>
-            <file>file:/E:/laravel/businessweb/app/product.php</file>
-            <file>file:/E:/laravel/businessweb/public/css/admin/admin.css</file>
-            <file>file:/E:/laravel/businessweb/app/Http/Controllers/HomeController.php</file>
-            <file>file:/E:/laravel/businessweb/app/Http/Controllers/Admin/Index.php</file>
-            <file>file:/E:/laravel/businessweb/resources/views/Admin/product/add_tab5.blade.php</file>
-            <file>file:/E:/laravel/businessweb/app/attachment.php</file>
-            <file>file:/E:/laravel/businessweb/database/migrations/2018_08_10_163735_product_profile.php</file>
-            <file>file:/E:/laravel/businessweb/resources/views/Admin/index.blade.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
